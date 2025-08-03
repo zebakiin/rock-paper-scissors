@@ -20,13 +20,13 @@ getComputerChoice()
 function getHumanChoice () {
     let answer = prompt("1: Rock 2: Paper 3: Scissors!");
 
-    if (answer == 1) {
+    if (answer == "Rock" || answer == 1 ) {
         console.log ("Rock!")}
 
-    else if (answer == 2) {
+    else if (answer == "Paper"|| answer == 2) {
         console.log ("Paper!")}
 
-    else if (answer == 3) {
+    else if (answer == "Scissors"|| answer == 3) {
         console.log ("Scissors!")}
     
     else {console.log ("Hey that wasnt an option >:(") }
