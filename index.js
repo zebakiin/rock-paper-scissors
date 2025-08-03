@@ -4,10 +4,14 @@ function getComputerChoice (a) {
     let result
     result = Math.random(a)
     console.log (result);
-    if (result >= 1/2) {
-        console.log ("larger!")
+
+    if (result >= 2/3) {
+        console.log ("above!")
     }
-    else console.log ("smaller!");
+    else if (result <= 1/3) { 
+        console.log ("under!");
+    }
+    else console.log ("middle!");
     
 }
 
