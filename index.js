@@ -31,6 +31,14 @@ function getHumanChoice () {
     
     else {console.log ("Hey that wasnt an option >:(") }
     };
-
-
 getHumanChoice()
+
+let humanScore = 0; 
+let computerScore = 0;
+
+  function playRound () {
+   
+
+  }
+   let humanChoice = getHumanChoice(); 
+    let computorChoice = getComputerChoice();
