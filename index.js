@@ -6,12 +6,12 @@ function getComputerChoice (a) {
     console.log (result);
 
     if (result >= 2/3) {
-        console.log ("above!")
+        console.log ("Rock!")
     }
     else if (result <= 1/3) { 
-        console.log ("under!");
+        console.log ("Paper!");
     }
-    else console.log ("middle!");
+    else console.log ("Scissors!");
     
 }
 
