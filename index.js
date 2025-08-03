@@ -3,7 +3,6 @@ console.log("Hello Team!")
 function getComputerChoice () {
     let result
     result = Math.random()
-    console.log (result);
 
     if (result >= 2/3) {
         console.log ("Rock!")
@@ -12,10 +11,9 @@ function getComputerChoice () {
         console.log ("Paper!");
     }
     else console.log ("Scissors!");
-    
+    return result;
 }
-
-getComputerChoice()
+console.log (getComputerChoice())
 
 function getHumanChoice () {
     let answer = prompt("1: Rock 2: Paper 3: Scissors!");
@@ -31,14 +29,17 @@ function getHumanChoice () {
     
     else {console.log ("Hey that wasnt an option >:(") }
     };
+
 getHumanChoice()
 
 let humanScore = 0; 
 let computerScore = 0;
+  
 
-  function playRound () {
+
+    
+
+  function playRound (humanChoice, computorChoice) {
    
-
   }
-   let humanChoice = getHumanChoice(); 
-    let computorChoice = getComputerChoice();
+ 
