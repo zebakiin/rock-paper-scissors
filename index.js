@@ -53,9 +53,12 @@ let computerScore = 0;
 
 //If I choose rock and the other person chooses rock, nothing happens. IF the other person chooses Paper, I lose. If the other person chooses Scissors, I win
 // Rock beats scissors ; Scissors beats Paper ; Paper beats Rock
- if (humanChoice == computerChoice) {console.log ("No Points for No one")}
+if (humanChoice == "rock" && computerChoice == "scissors" ||
+     humanChoice == "scissors" && computerChoice == "paper" ||
+      humanChoice == "paper" && computerChoice == "rock"
+) {console.log ("Horray! You Won!")}
 
- 
+ else if (humanChoice == computerChoice) {console.log ("No Points for No one")}
 
  else {console.log ("womp womp")}
     return humanChoice + computerChoice
