@@ -14,7 +14,6 @@ function getComputerChoice () {
     }
     else console.log ("Scissors!")
     return "scissors"
-    return result;
 }
 
 
@@ -47,27 +46,36 @@ let computerScore = 0;
   
 
 
+  function playGame (playRound) {
 
+  }
+   const humanChoice = getHumanChoice(); 
+  const computerChoice = getComputerChoice();
+  
+  const noWin = (humanChoice == computerChoice);
+  const humanWins = (humanChoice == "rock" && computerChoice == "scissors" ||
+     humanChoice == "scissors" && computerChoice == "paper" ||
+      humanChoice == "paper" && computerChoice == "rock");
+  const computerWins =(humanChoice == "rock" && computerChoice == "paper" ||
+     humanChoice == "scissors" && computerChoice == "rock" ||
+      humanChoice == "paper" && computerChoice == "scissors");
+  
 
-  function playRound (humanChoice, computerChoice) {
+ 
+
+  function playRound () {
 
 //If I choose rock and the other person chooses rock, nothing happens. IF the other person chooses Paper, I lose. If the other person chooses Scissors, I win
 // Rock beats scissors ; Scissors beats Paper ; Paper beats Rock
 //
-if (humanChoice == "rock" && computerChoice == "scissors" ||
-     humanChoice == "scissors" && computerChoice == "paper" ||
-      humanChoice == "paper" && computerChoice == "rock")
-       {console.log ("You are the Vitkor! Stand proud, but dont let your valor get the better of you..."); humanScore++; console.log ("You have:", humanScore)}
-
-else if (humanChoice == "rock" && computerChoice == "paper" ||
-     humanChoice == "scissors" && computerChoice == "rock" ||
-      humanChoice == "paper" && computerChoice == "scissors"
-) {console.log ("You have lost this one.. Dont fret for you might still stand victorius"); computerScore++; console.log ("It has:", computerScore)
+if (humanWins) {{console.log ("You are the Vitkor! Stand proud, but dont let your valor get the better of you..."); humanScore++; console.log ("You have:", humanScore); return humanScore++}
 }
-
- else if (humanChoice == computerChoice) {console.log ("No Points for No one")}
-    
+else if(computerWins) {{console.log ("You have lost this one.. Dont fret for you might still stand victorius"); computerScore++; console.log ("It has:", computerScore); return computerScore++}
   }
+else if (noWin) {console.log ("No Points for No one")}
+  }
+
  
-  playRound(getHumanChoice(), getComputerChoice())
-  
+  playRound();
+
+ 
