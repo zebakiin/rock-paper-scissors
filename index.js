@@ -74,6 +74,9 @@ let computerScore = 0
 
   playRound(getHumanChoice(), getComputerChoice())
     playRound(getHumanChoice(), getComputerChoice())
+    playRound(getHumanChoice(), getComputerChoice())
+    playRound(getHumanChoice(), getComputerChoice())
+    playRound(getHumanChoice(), getComputerChoice())
       
           winner()
           
