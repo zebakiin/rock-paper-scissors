@@ -41,8 +41,6 @@ function getHumanChoice () {
         return "not taken"
      };
     
-
-
 //calls all these above
 
 let humanScore = 0
@@ -50,7 +48,9 @@ let computerScore = 0
 
 
 
-function playRound(humanChoice, computerChoice) {
+
+  function playGame () {
+    function playRound(humanChoice, computerChoice) {
 
    if (humanChoice == "rock" && computerChoice == "scissors" ||
      humanChoice == "scissors" && computerChoice == "paper" ||
@@ -62,15 +62,24 @@ function playRound(humanChoice, computerChoice) {
 
     else {console.log ("A standstil - You chose:", humanChoice, "It chose:", computerChoice)}
 }
-     const humanSelection = getHumanChoice(); 
-  const computerSelection = getComputerChoice();
+  function winner() {
+    if 
+  }
+//Problem: variable does not redefine itself. Reason: variable takes on assigined value from function. Solution: recall choice function to get new choice. 
+// Question: How to recall choice function -> return value
 
 
-  playRound(humanSelection, computerSelection)
 
-  
+  playRound(getHumanChoice(), getComputerChoice())
+    playRound(getHumanChoice(), getComputerChoice())
+      playRound(getHumanChoice(), getComputerChoice())
+        playRound(getHumanChoice(), getComputerChoice())
+          playRound(getHumanChoice(), getComputerChoice())
+          
+  }
+playGame()
 
- 
+
 
 
  
