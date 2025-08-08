@@ -63,7 +63,9 @@ let computerScore = 0
     else {console.log ("A standstil - You chose:", humanChoice, "It chose:", computerChoice)}
 }
   function winner() {
-    if 
+    if (humanScore>computerScore) {console.log (humanScore, "to", computerScore, "For you. Its final, you won... but at what cost? How many recources are you willing to give up for this?")}
+    else if (humanScore<computerScore) {console.log (humanScore, "to", computerScore, "For it. How could you let us down like this?")}
+    else {console.log ("No one wins", humanScore, "to", computerScore, ". It seems this fight must be fought some time else")}
   }
 //Problem: variable does not redefine itself. Reason: variable takes on assigined value from function. Solution: recall choice function to get new choice. 
 // Question: How to recall choice function -> return value
@@ -72,12 +74,21 @@ let computerScore = 0
 
   playRound(getHumanChoice(), getComputerChoice())
     playRound(getHumanChoice(), getComputerChoice())
-      playRound(getHumanChoice(), getComputerChoice())
-        playRound(getHumanChoice(), getComputerChoice())
-          playRound(getHumanChoice(), getComputerChoice())
+      
+          winner()
           
   }
 playGame()
+
+// function another () {
+//     answer = prompt("Do you want to play another? 1:yes 2:no")
+
+//     if (answer === 1 || "yes") {playGame()}
+//     else if (answer === 2 || "no"
+//     ) {return console.log ("There comes a time when we must all concede")}
+// }
+
+// another()
 
 
 
